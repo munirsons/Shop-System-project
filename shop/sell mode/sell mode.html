@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Billing System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <link rel="stylesheet" href="sell mode.css">
+    <link rel="shortcut icon" href="https://img.freepik.com/free-vector/golden-elegant-logo-with-frame_52683-13462.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- navbar code start from here  -->
+    <nav class="navbar navbar-expand-lg navbar-custom px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/free-vector/golden-elegant-logo-with-frame_52683-13462.jpg"
+                    class="logo" alt="Logo">
+            </a>
+            <time id="current-time"></time>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Perchase mode/perchase mode.html">Perchase Mode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sell mode/sell mode.html">Sell Mode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="/LoginPg/login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2>If you are new here Please click on reset the button first</h2>
+    <div class="container mt-3">
+        <button class="btn btn-primary" id="viewBillBtn">View Bill</button>
+        <button class="btn btn-danger" id="resetBillBtn">Reset</button>
+        <input type="text" id="searchBox" class="form-control w-25 float-end" placeholder="Search products...">
+        <div class="row mt-3" id="productContainer"></div>
+    </div>
+
+    <div class="modal fade" id="billModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Selected Products</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sr</th>
+                                <th>Product</th>
+                                <th>Qty</th>
+                                <th>Discount</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="billTableBody"></tbody>
+                    </table>
+                    <h4 class="text-end">Total Bill: <span id="totalBillAmount">0</span></h4>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" id="confirmBillBtn">Confirm Bill</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sell mode.js"></script>
+</body>
+</html>

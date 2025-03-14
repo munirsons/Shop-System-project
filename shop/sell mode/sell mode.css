@@ -1,0 +1,49 @@
+.card { cursor: pointer; }
+.modal-content { max-width: 600px; margin: auto; }
+.bill-container { text-align: center; margin-top: 20px; }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(213, 213, 166);
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar-custom {
+    height: 10em;
+    background-color: purple;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.navbar-brand img {
+    height: 5em;
+    width: 5em;
+    border-radius: 100px;
+}
+.navbar-brand img:hover{
+    height: 6.5em;
+    width: 6.5em;
+    transition: 1s;
+}
+
+.nav-item a {
+    /* color:rgb(213, 213, 166) !important; */
+    background: purple;
+    border: 2px solid black;
+    width: 10em;
+    font-weight: bolder;
+    margin: 15px;
+    font-size: 25px;
+    text-align: center;
+    border-radius:20px ; 
+}
+time{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: rgb(213, 213, 166);
+}
+.container {
+    margin-top: 20px;
+}

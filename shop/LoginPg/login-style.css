@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: purple;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    height: 35em;
+    width: 25em;
+    background: rgb(213, 213, 166);
+    margin: 60px auto ;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 15px 15px 55px rgb(213, 213, 166);
+}
+.heading{
+    font-size: 40px;
+    
+    padding:25px;
+    margin-top: 15px;
+}
+.lables{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.inputs{
+    height: 2em;
+    width: 18rem;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.login-btn{
+    text-decoration: none;
+    width: 90em;
+    background: purple;
+    border-radius: 25px ;
+    color:rgb(213, 213, 166) ;
+    padding: 15px;
+    font-size: 40px;
+    position:relative;
+    top: 3em ;
+
+}
+.login-btn:active{
+    color: red;
+}
+
+.msg{
+    color: red;
+    margin-top: 5px;
+    font-size: 20px;
+    
+}
+
+ .hide{
+    display: none;
+ }
